@@ -1,0 +1,11 @@
+{
+    "require-dev": {
+        "povils/phpmnd": "dev-checkstyle"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/sasezaki/phpmnd.git"
+        }
+    ]
+}
