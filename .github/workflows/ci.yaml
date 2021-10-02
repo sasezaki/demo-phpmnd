@@ -1,6 +1,5 @@
 name: CI
 on:
-  push:
   pull_request:
 jobs:
   tests:
@@ -22,4 +21,4 @@ jobs:
       - name: Install Composer dependencies
         run: composer install --no-interaction
       - name: Execute phpmnd
-        run: ./vendor/bin/phpmnd --checkstyle-output=php://stdout -q src | cs2pr
+        run: ./vendor/bin/phpmnd --checkstyle-output=php://stdout -q . | cs2pr
